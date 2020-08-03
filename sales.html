@@ -1,0 +1,186 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+    <div class="account-drop">
+      <h3>Account ID 1982637</h3>
+      <a href="">Time Clock</a>
+      <a href="">Change Employee</a>
+      <a href="">Employee Settings</a>
+      <a href="">Sign Out</a>
+    </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html" id="dashboard-active">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+    <div id="dashboard-main">
+      <div id="dashboard-main-top">
+
+        <span class="nav-toggle" onclick="openNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </span>
+          
+        <p> 
+        <i class="fa fa-download"></i>
+        <span>Sales</span>
+        </p>
+      </div>
+
+      <div class="sales-wrap">
+        <div class="row">
+        <div class="col-md-9">  
+        <div class="sales-wrap-top">
+        <button class="no-cus-btn">No customer Selected</button> 
+        <form>
+          <input type="" name="" placeholder="Search Customers">
+          <button><i class="fa fa-search"></i> Search</button>
+        </form>
+        <button class="new-btn"><i class="fa fa-plus"></i> New</button>
+        </div>
+        <div class="sales-wrap-top">
+        <form>
+          <input type="" name="" placeholder="Item">
+          <button><i class="fa fa-search"></i> Search</button>
+        </form>
+        <button class="new-btn"><i class="fa fa-plus"></i> New</button>
+        </div>
+
+
+          <div class="top-tab table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Description</th>
+                  <th scope="col">Price Qty</th>
+                  <th scope="col">Tax</th>
+                  <th scope="col">Sub Total</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="sales-wrap-bottom">
+            <button>Apply Discount</button>
+            <button>Set Tax</button>
+          </div>
+      </div>
+    <div class="col-md-3">
+      <div class="sales-left"> 
+      <p>Subtotal <i>$0.00</i></p>
+      <p>Discount <i>$0.00</i></p>
+      <p>HST <i>$0.00</i></p>
+      <p><b>TOTAL: <i>$0.00</i></b></p>
+      <div class="payment-btn">
+      <button>Payment</button>
+      </div>
+      <button class="save-quote-btn"><span class="fa fa-cloud-download-alt"></span> Save as Quote</button>
+      <button class="cancel-sale-btn">Cancel Sale</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div><!--- end dashboard main-->
+</div><!--- end dashboard-->

@@ -1,0 +1,331 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css"> 
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <link rel="stylesheet" href="css/drag_and_drop.css"> 
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3>
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html" id="dashboard-active">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fa fa-archive"></i>
+        <span>Inventory > <b>Items : Stove GE Profile Electric New</b></span>
+      </p>
+    </div>
+
+    <div class="inventory-wrap inventory-1-wrap">
+      <form>
+
+        <div class="inventory-wrap-top top1">
+          <div style="float: left;">
+            <button class="inactive-style">Save Changes</button>
+            <button class="active-style1">Add label</button>
+            <button class="active-style1">Matrix</button>
+            <button class="active-style1">Print Label</button>
+          </div>
+          <div class="right" style="margin-top: 0px;padding:0px 20px;">
+            <button class="active-style1">Duplicate</button>
+            <button class="active-style2">Archive</button>
+          </div> 
+        </div>
+
+        <div class="form-wrapper" style="padding-left: 0px;"><!-- adds padding-->
+
+          <div class="inventory-wrap-with-side">
+            <div class="hold" style="padding-top: 20px;">
+            <div class="float-hold">  
+            <p style="display:inline-block;font-weight: 600;padding-right: 10px;">Stove GE Profile Electric New</p>
+            </div>
+            <div class="float-hold">
+            <label style="font-weight: 100;">Type</label>
+            <select>
+              <option>Single</option>
+            </select>
+            </div>
+            <div class="custom-control custom-checkbox float-hold checkbox-right">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked">
+              <label class="custom-control-label" for="defaultChecked">Serialized</label>
+            </div>
+            </div>  
+
+            <!-- drag and drop -->
+            <div class="wrapper">
+              <div class="drop">
+                <div class="cont">
+                  <i class="fa fa-cloud-upload"></i>
+                  <div class="tit">
+                    Drag & Drop
+                  </div>
+                  <div class="desc">
+                    your files to upload, or 
+                  </div>
+                  <div class="browse">
+                    click here to browse
+                  </div>
+                </div>
+                <output id="list"></output><input id="files" multiple="true" name="files[]" type="file" />
+              </div>
+              <span class="drag-hide"><i class="fa fa-times"></i> Hide</span>
+            </div>
+            <!-- drag and drop -->
+
+            <div class="row">
+              <div class="col-md-5">
+                <button class="add-images"><i class="fa fa-plus"></i> Add Images</button>
+                <div class="top-highlight" style="margin-top: 0px;"><h3>Stoves</h3></div>
+                <div class="hold"><label>Brand</label>
+                  <select>
+                    <option>GE Profile</option>
+                  </select>
+                </div>
+                <div class="hold"><label>Type</label>
+                  <select>
+                    <option>Electric</option>
+                  </select>
+                </div>
+                <div class="hold"><label>Condition</label>
+                  <select>
+                    <option>New</option>
+                  </select>
+                </div>
+                <div class="top-highlight"><h3>IDs</h3></div>
+                <p class="highlight-p">System ID<i>21000000128</i></p>
+                <div class="hold"><label>UPC</label><input type="text" name="" placeholder="UPC"></div>
+                <div class="hold"><label>EAN</label><input type="text" name="" placeholder="EAN"></div>
+                <div class="hold"><label>Custom SKU</label><input type="text" name="" placeholder="Custom SKU"></div>
+                <div class="hold"><label>Manufact. SKU</label><input type="text" name="" placeholder="Manufact. SKU" value="PCHS920BMTS"></div>
+                <div class="top-highlight"><h3>Organize</h3></div>
+                <p class="highlight-p">Category<i style="color: #0099cc;">Kitchen Appliances/Stove</i></p>
+                <div class="hold"><label>Brand</label><input list="brands" name="myBrands" id="myBrands" placeholder="Select or Enter a Brand" value="Maytag" /></div>
+                <datalist id="brands">
+                  <option value="Brand1"/>
+                  <option value="Brand2"/>
+                  <option value="Brand3"/>
+                </datalist>
+                <div class="hold"><label>Tags</label><input type="" name="" placeholder="Tag(s)"></div>
+              </div>
+              <div class="col-md-4">
+                <div class="top-highlight"><h3>Price</h3></div>
+
+                <div class="top-tab table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Mark up</th>
+                        <th scope="col">Margin</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>Default</b></td>
+                        <td>$<input type="text" name="" placeholder="0.00" value="1750.00" class="price"></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><b>MSRP</b></td>
+                        <td>$<input type="text" name="" placeholder="0.00" value="0.00" class="price"></td> 
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody> 
+                  </table>
+                </div>
+
+                <div class="top-highlight"><h3>Inventory Defaults</h3></div>
+                <div class="hold"><label>Default cost</label><input type="" name="" placeholder="$ 0.00" value="0.00"/></div>
+                <div class="hold"><label>Vendor</label><input type="" name="" placeholder="None" value="None"/></div>
+
+                <div class="top-highlight"><h3>Automatic Re-Ordering</h3></div>
+                <div class="hold"><label>Re-order Point</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Desired inventory level</label><input type="" name="" placeholder="0" value="0"/></div>
+
+              </div>
+
+              <div class="col-md-3">
+                <div class="top-highlight"><h3>Stock</h3></div>
+                <div class="hold"><label>In stock</label><input type="" name="" placeholder="$ 0.00" value="1"/></div>
+                <div class="hold"><label>Avg. cost $</label><input type="" name="" placeholder="$ 0.00" value="0.00"/></div>
+                <div class="top-highlight"><h3>Orders</h3></div>
+                <div class="hold"><label>Layaway</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Special Order</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>On Order</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Pending Return</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Workorder</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="top-highlight"><h3>Sales History</h3></div>
+                <div class="hold"><label>Day</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Week</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>Year</label><input type="" name="" placeholder="0" value="0"/></div>
+                <div class="hold"><label>All</label><input type="" name="" placeholder="0" value="0"/></div>
+
+              </div>
+            </div>
+
+            <div class="top-highlight"><h3>Notes</h3></div>
+            <div class="hold">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked2">
+                  <label class="custom-control-label" for="defaultChecked2">Display Note on Sales and Receipts</label>
+                </div>
+            </div>
+
+            <textarea>5 Burners, Black Stainless Steel.
+            </textarea>
+          </form><!--form-->
+
+          <div class="inventory-wrap-side-nav"><!-- side-->
+            <div class="top-highlight"><h3>Details</h3></div>
+            <a href="">Inventory</a>
+            <a href="">Serial #s</a>
+            <a href="">Vendor IDs</a>
+            <a href="">Sales</a>
+            <a href="">Layaways</a>
+            <a href="">Special Orders</a>
+            <a href="">Workorders</a>
+            <a href="">Customers</a>
+            <a href="">Graphs</a>
+            <a href="">Purchase Orders</a>
+            <a href="">Vendor Returns</a>
+            <a href="">History</a>
+            <a href="">Merge</a>
+          </div>
+
+        </div><!--inventory-width-side -->
+      </div><!-- form wrapper -->
+
+    </div>
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.drag-hide').click(function(){
+      $('.wrapper').css('display','none');
+    }); 
+
+    $('.add-images').click(function(event){
+      event.preventDefault(); 
+      $('.wrapper').css('display','block');
+    });
+  })
+</script>
+
+<script type="text/javascript" src="js/drag_and_drop.js"></script>

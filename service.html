@@ -1,0 +1,169 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+    <div class="account-drop">
+      <h3>Account ID 1982637</h3>
+      <a href="">Time Clock</a>
+      <a href="">Change Employee</a>
+      <a href="">Employee Settings</a>
+      <a href="">Sign Out</a>
+    </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html" id="dashboard-active">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html" >
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fas fa-braille"></i>
+        <span>Service > <b>Workorder: New</b></span>
+      </p>
+    </div>
+
+    <div class="service-wrap">
+      <div class="row">
+      <div class="col-md-9">  
+      <h2>Find or Create New Customer</h2>
+      <p>to get your work order started enter customer details to create a new customer record or locate an existing customer record.</p>
+      <form>
+        <label>Name</label>
+        <input type="" name="" placeholder="First Name" class="input1">
+        <input type="" name="" placeholder="Last Name" class="input1">
+        <label>Address</label>
+        <input type="" name="" placeholder="Mailing Address" class="input2">
+        <input type="" name="" placeholder="Mailing Address Cont." class="input2">
+        <input type="" name="" placeholder="City" class="input2">
+        <select>
+          <option>Country</option>
+        </select>
+        <input type="" name="" placeholder="State" class="input2">
+        <input type="" name="" placeholder="Zip " class="input1">
+        <label>Phone</label>
+        <input type="" name="" placeholder="Home Phone" class="input1">
+        <input type="" name="" placeholder="Work Phone" class="input1">
+        <input type="" name="" placeholder="Mobile" class="input2">
+        <label>Email</label>
+        <input type="" name="" placeholder="Email Address" class="input1">
+        <input type="" name="" placeholder="Alt. Email" class="input1">
+        <label>Birth Date</label>
+        <input type="date" name="" >
+        <button>Create New Customer</button>
+      </form>
+      </div>
+
+      <div class="col-md-3">
+        <h3>POSSIBLE MATCHES</h3>
+      </div>
+      </div>
+
+    </div>
+
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->

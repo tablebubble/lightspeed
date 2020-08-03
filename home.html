@@ -1,0 +1,294 @@
+<html>
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+<body>
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+    <div class="account-drop">
+      <h3>Account ID 1982637</h3>
+      <a href="">Time Clock</a>
+      <a href="">Change Employee</a>
+      <a href="">Employee Settings</a>
+      <a href="">Sign Out</a>
+    </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html" id="dashboard-active"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+    <div id="dashboard-main">
+      <div id="dashboard-main-top">
+
+        <span class="nav-toggle" onclick="openNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </span>
+          
+        <p> 
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+        </p>
+      </div>
+
+
+
+      <div class="summary-wrap">
+        <div class="inner">
+        <h1>Welcome back, Strongman</h1>
+        <p>Here's what is happening in your shop today.</p>
+        <div class="summary">
+          <div class="sum">
+            <h2>Revenue</h2>
+            <p>$0</p>
+          </div>
+          <div class="sum">
+            <h2>Margin</h2>
+            <p>$0</p>
+          </div>
+          <div class="sum">
+            <h2>Profit</h2>
+            <p>$0</p>
+          </div>
+          <div class="sum">
+            <h2>Sales</h2>
+            <p>$0</p>
+          </div>
+          <div class="sum">
+            <h2>Discount</h2>
+            <p>$0</p>
+          </div>
+          <div class="sum">
+            <h2>Refunds</h2>
+            <p>$0</p>
+          </div>
+          <button style="color: #fff;"><i class="fa fa-question-circle"></i> Close Help</button>
+        </div>
+
+        <div class="row">
+        <div class="col-md-8">  
+        <div class="summary-1">
+        <h3>Today's revenue</h3>
+        <h4>November 21, 2019. GMT</h4>
+        </div><!--summary 1-->
+        </div><!-- col-md-8-->
+
+        <div class="col-md-4">
+        <div class="summary-2">
+          <div class="summary-day day-active">
+            <h3>Yesterday</h3>
+            <p><i>+$0</i> -%</p>
+          </div>
+          <div class="summary-day">
+            <h3>Yesterday</h3>
+            <p><i>+$0</i> -%</p>
+          </div>
+          <div class="summary-day">
+            <h3>Yesterday</h3>
+            <p><i>+$0</i> -%</p>
+          </div>
+          <div class="summary-day">
+            <h3>Your usual Thursday</h3>
+            <p><i>+$0</i> -%</p>
+          </div>
+        </div><!--summary 2-->
+        </div><!-- col-md-8-->
+      </div><!--row-->
+
+      </div>
+      </div>
+  
+  <!-- START NOTIFICATION SECTION-->
+  <div class="notification-wrapper">
+    <div class="row">
+    <div class="col-md-8">
+    <div class=" notification-wrap1">
+    <div class="notification">
+      <button class="close-task"><i class="fa fa-times-circle"></i></button>
+      <h2>Manage your task</h2>
+      <p>Use task cards to stay on top of everything. From here, you can click through to see today's sales or your currently active orders fro the last 30days.</p>
+      <button class="got-it">Got it</button>
+    </div>
+    </div><!--notification-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="notification-col">
+         <div class="notification-col-top"> 
+        <h2>0</h2>
+        <h3>Today's Sale <i class="fa fa-chevron-right"></i></h3>
+        <img src="img/3-3.png"/>
+        </div>
+        <h4>1 open sales</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="notification-col">
+         <div class="notification-col-top"> 
+        <h2>0</h2>
+        <h3>Active Special Orders<i class="fa fa-chevron-right"></i></h3>
+        <img src="img/1.png" style="width: 120px;right: -10px;" />
+        </div>
+        <h5>0 To order <span>0 Ready</span></h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="notification-col">
+         <div class="notification-col-top"> 
+        <h2>0</h2>
+        <h3>Active Purchased orders <i class="fa fa-chevron-right"></i></h3>
+        <img src="img/3-5.png"/>
+        </div>
+        <h5>0 Overdue <span>0 To check in</span></h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="notification-col">
+         <div class="notification-col-top"> 
+        <h2>0</h2>
+        <h3>Active Work orders <i class="fa fa-chevron-right"></i></h3>
+        <img src="img/2.png" style="right: -15px;" />
+        </div>
+        <h5>0 Overdue <span>0 To finish</span></h5>
+        </div>
+      </div>
+    </div>
+    </div><!-- col-md-8-->
+
+
+    <div class="col-md-4">
+    <div class="notification-wrap2">
+    <div class="notification">
+      <button class="close-task"><i class="fa fa-times-circle"></i></button>
+      <h2>Manage your task</h2>
+      <p>Follow sales as they happen and stay up-to-the-minute on employee activity.</p>
+      <button class="got-it">Got it</button>
+    </div>
+    <div class="notification-tab">
+      <p>6 days ago</p>
+      <h2><i>Strong man</i> completed a sale.</h2>
+      <h3>1 items</h3>
+      <h3>$630.00</h3>
+      <span class="fa fa-chevron-right"></span> 
+    </div>
+    <div class="notification-tab">
+      <p>6 days ago</p>
+      <h2><i>Strong man</i> completed a sale.</h2>
+      <h3>1 items</h3>
+      <h3>$630.00</h3>
+      <span class="fa fa-chevron-right"></span> 
+    </div>
+    <div class="notification-tab">
+      <p>6 days ago</p>
+      <h2><i>Strong man</i> completed a sale.</h2>
+      <h3>1 items</h3>
+      <h3>$630.00</h3>
+      <span class="fa fa-chevron-right"></span> 
+    </div>
+    </div><!--notification-->
+    </div><!-- col-md-4-->
+  </div>
+  </div><!-- END NOTIFICATION SECTION -->
+
+
+
+
+</div><!--- end dashboard main-->
+</div><!--- end dashboard-->
+    </body>
+</html>

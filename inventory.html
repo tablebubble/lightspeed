@@ -1,0 +1,289 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css"> 
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3>
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html" id="dashboard-active">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fa fa-archive"></i>
+        <span>Inventory > <b>Items</b></span>
+      </p>
+    </div><!-- dashboard main top-->
+
+    <div class="inventory-wrap">
+      <div class="inventory-wrap-top">
+        <form><!-- search form-->
+          <div class="inventory-search-form inventory-search-form1">
+            <input type="" name="" placeholder="Search Items Description"> 
+            <input type="" name="" placeholder="Tag(s)" style="width: 60px;">
+            <input type="" name="" placeholder="Exclude Tag(s)" style="width: 110px;">
+            <button>Search</button>
+            <h2 class="advanced-click"><i class="fa fa-chevron-right"></i> Advanced</h2>
+            <a href="inventory_new.html" class="inventory_new"><i class="fa fa-plus"></i> New Item</a>
+            
+          <div class="advanced-search-form">
+            <div class="float-hold">
+              <div class="hold">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked1">
+                  <label class="custom-control-label" for="defaultChecked1">Show Type</label>
+                </div>
+              </div>
+              <div class="hold">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked2">
+                  <label class="custom-control-label" for="defaultChecked2">Show Company</label>
+                </div>
+              </div>
+              <div class="hold"> 
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultChecked3">
+                  <label class="custom-control-label" for="defaultChecked3">Archived</label>
+                </div>
+              </div>
+            </div>
+            <div class="float-hold">
+              <label>Customer Created</label>
+              <input type="text" name="" placeholder="Ex: Today, Last Month">
+            </div>
+            <div class="float-hold">
+              <label>Type</label>
+              <select><option>All Types</option></select>
+            </div>
+            <div class="float-hold">
+              <label>Discount Type</label>
+              <select><option>All Discounts</option></select>
+            </div>
+            <div class="float-hold">
+              <label>Sales Tax</label>
+              <select><option>All Sales Tax</option></select>
+            </div>
+          </div>
+          </div>
+        </form><!-- ! search form -->
+
+      </div>
+      <div class="inventory-wrap-mid">
+        <p>32 Results</p>
+        <div class="paginator">
+          <button><i class="fa fa-caret-left"></i></button>
+          <span>1-32</span>
+          <button><i class="fa fa-caret-right"></i></button>
+        </div>
+        <p style="color:#0099cc;font-weight: 600;">100 PER PAGE</p>
+
+        <div class="right">
+          <button><i class="fa fa-print"></i> Print</button>
+          <button><i class="fa fa-file-excel"></i> Export</button>
+        </div>
+      </div>
+
+      <div class="top-tab table-responsive inventory-table">
+        <table class="table table-bordered" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th scope="col" style="padding-left: 30px;">Name</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Price</th>
+              <th scope="col">Tax</th>
+              <th scope="col">Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+            <tr>
+              <td class="colored"><i class="fa fa-tag"></i> Stove like gas</td>
+              <td>1</td> 
+              <td><p class="tab-price">$ <input type="text" value="123"></p></td>
+              <td><input type="checkbox" checked/> </td>
+              <td><b>Kitchen Appliances and Stove</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="inventory-wrap-mid margin-bottom">
+        <p>32 Results</p>
+        <div class="paginator">
+          <button><i class="fa fa-caret-left"></i></button>
+          <span>1-32</span>
+          <button><i class="fa fa-caret-right"></i></button>
+        </div>
+        <p style="color:#0099cc;font-weight: 600;">100 PER PAGE</p>
+
+        <div class="right">
+          <button><i class="fa fa-print"></i> Print</button>
+          <button><i class="fa fa-file-excel"></i> Export</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->

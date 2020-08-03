@@ -1,0 +1,253 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+    <div class="account-drop">
+      <h3>Account ID 1982637</h3>
+      <a href="">Time Clock</a>
+      <a href="">Change Employee</a>
+      <a href="">Employee Settings</a>
+      <a href="">Sign Out</a>
+    </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html" >
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html" id="dashboard-active">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fa fa-cog"></i>
+        <span><b>Settings</b></span>
+      </p>
+    </div>
+
+    <div class="settings-wrap">
+
+      <h2>General</h2>
+      <div class="settings">
+        <i class="fa fa-wrench"></i>
+        <span>Shop Setup</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-shield-alt"></i>
+        <span>Employee Setup</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-home"></i>
+        <span>General Options</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-magic"></i>
+        <span>Subscription Setup</span>
+      </div>
+      <div class="settings">
+        <i class="fab fa-free-code-camp"></i>
+        <span>Company Branding</span>
+      </div>
+ 
+      <h2>Sales</h2>
+      <div class="settings">
+        <i class="fa fa-list-alt"></i>
+        <span>Payment Types</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-th-list"></i>
+        <span>Tax Classes</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-list-ol"></i>
+        <span>Sales Taxes</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-credit-card"></i> 
+        <span>Payment Processing</span>
+      </div>
+
+
+      <h2>Pricing</h2>
+      <div class="settings">
+        <i class="fa fa-asterisk"></i>
+        <span>Price Rules</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-dollar-sign"></i>
+        <span>Pricing Levels</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-check-circle"></i>
+        <span>Discount</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-money-bill"></i>
+        <span>Bulk Pricing Changes</span>
+      </div>
+
+
+      <h2>Service</h2>
+      <div class="settings">
+        <i class="fa fa-server"></i>
+        <span>Custom Statuses</span>
+      </div>
+
+
+      <h2>Utilities</h2>
+      <div class="settings">
+        <i class="fa fa-edit"></i>
+        <span>Adjust Payment</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-archive"></i>
+        <span>Archive Items</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-briefcase"></i>
+        <span>Archive Customers</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-sitemap"></i>
+        <span>Jobs</span>
+      </div>
+
+      <h2>Advanced Setup</h2>
+      <div class="settings">
+        <i class="fa fa-users"></i>
+        <span>Employee Roles</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-terminal"></i>
+        <span>Event Log</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-cog"></i>
+        <span>Client API Access</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-cogs"></i>
+        <span>Integration Setup</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-tags"></i>
+        <span>Custom Fields</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-ellipsis-v"></i>
+        <span>Custom Menus</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-puzzle-piece"></i>
+        <span>Optional Modules</span>
+      </div>
+      <div class="settings">
+        <i class="fa fa-bug"></i>
+        <span>Print Templates</span>
+      </div>
+    </div>
+
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->
