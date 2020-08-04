@@ -519,6 +519,7 @@ box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.2);
 .inventory-wrap-side-nav{width: 130px;position: absolute;left: 0;padding:0px 7px;top: 0px;}
 .inventory-wrap-side-nav a{width: 100%;display: block;padding:7px 5px;font-size: 15px;text-decoration: none !important;} 
 .inventory-wrap-side-nav a:hover{background: #e6e6e6;}
+.inventory-wrap-side-nav #active{background: #f2f2f2;color: #000;}
 .inventory-wrap-side-nav h3{border-bottom: 0px !important;margin-bottom: 0px !important;} 
 .inventory-wrap-top{
     width: 100%;
@@ -746,7 +747,9 @@ table tr th{font-size: 13px;}
     border-right: 0px !important;
     border-left: 0px !important;
     border-bottom:0px !important;
-    float: none !important;} 
+    float: none !important;
+    font-size: 12px;
+} 
 .inventory-wrap textarea{
     width: 100%;
     height: 140px;

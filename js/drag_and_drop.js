@@ -42,7 +42,7 @@ function handleFileSelect(evt) {
           e.target.result,
           '" title="',
           escape(theFile.name),
-          '"/>'
+          '"/><button class="thumb-btn"><i class="fa fa-trash"></i></button><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="defaultChecked2"><label class="custom-control-label" for="defaultChecked2"></label></div>'
         ].join("");
         document.getElementById("list").insertBefore(span, null);
       };

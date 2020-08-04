@@ -1,15 +1,15 @@
 .wrapper {
     width: 100%;
-    height: 400px;
     position: relative;
     display: none;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .drop {
-    width: 100%;
-    height: 100%;
-    border: 3px dashed #DADFE3;
+    width: 40%;
+    height: 360px;
+    border: 2px dashed #DADFE3;
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
@@ -17,17 +17,11 @@
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    float: left;
     /*&:hover
    * cursor: pointer
    * background: #f5f5f5 */
 }
-
 .wrapper:hover .drop {
     border: 3px dashed green;
 }
@@ -40,11 +34,8 @@
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    padding-top: 90px;
+    position: relative;
 }
 
 .drop .cont i {
@@ -54,8 +45,10 @@
 }
 
 .drop .cont .tit {
-    font-size: 400%;
+    font-size: 40px;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .drop .cont .desc {
@@ -71,12 +64,11 @@
 }
 
 .drop input {
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 350px;
     cursor: pointer;
     background: red;
     opacity: 0;
-    margin: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -85,30 +77,59 @@
 }
 
 #list {
-    width: 100%;
+    width: 60%;
     text-align: left;
-    position: absolute;
-    left: 20px;
-    right: 10px;
-    padding-right: 20px;
-    top: 10px;
+    position: relative;
+    float: right;
+    right: 0px;
+    padding:0px 20px;
 }
 
-#list .thumb {
-    height: 75px;
-    border: 1px solid #ccc;
+#list .thumb {    height: 150px;
+    border: 1px solid #ddd;
     margin: 10px 5px 0 0;
+    width: 100%;
 }
 
 .drag-hide {
     position: absolute;
-    top: 5px;
-    right: 13px;
+    top: 10px;
+    left: 13px;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
 }
+#list span{position: relative;display: inline-block;width: 32%;margin-left: 1%;}
+.thumb-btn{
+    background: transparent;
+    border: 0px;
+    color: #e60000;
+    position: absolute;
+    bottom: 3.7px;
+    left: 30px;
+}
+#list .custom-control {
+    margin-top: -30px;
+    width: 100px;
+}
 
 .drag-hide:hover {
     background: rgba(0, 0, 0, 0.06);
+}
+
+@media(max-width:768px){
+    .wrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .drop{width: 100%;}
+    
+.drop input {
+    width: 100%;
+}
+
+#list {
+    width: 100%;
+}
 }
