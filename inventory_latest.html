@@ -1,0 +1,257 @@
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/new_style.css">
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard">
+  <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3>
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <a href="home.html">
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html" id="dashboard-active">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i>
+          <span>Customer</span>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i>
+          <span>Reports</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i> Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div>
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p>
+        <i class="fa fa-archive"></i>
+        <span>Inventory > Shipments</span>
+        <span>> <b>Shipping: Toyota</b></span>
+      </p>
+      <div class="float-right" style="margin-right: 20px;">
+        <p>6-69 
+        <span class="direction">
+          <i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i>
+        </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="inventory-wrap">
+
+      <form>
+        <!-- FORM STARTS -->
+
+        <div class="inventory-wrap-top top1">
+          <button class="inactive-style">Save Changes</button>
+          <button class="inactive-style">Save & Start New item</button>
+        </div>
+
+        <div class="form-wrapper">
+          <!-- adds padding-->
+
+          <div class="row form-section">
+            <div class="col-md-6">
+              <div class="top-highlight">
+                <h3>Details</h3>
+              </div>
+              <div class="hold"><label style="border: 0px;">Shipped</label>
+            <div class="custom-control custom-checkbox float-hold checkbox-right">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked">
+              <label class="custom-control-label" for="defaultChecked" style="border: 0px;"></label>
+            </div></div>
+              <div class="hold" id="hold-2"><label>Sale</label><input type="text" name="" value="106" id="sale"><i class="fa fa-pen"></i>
+              </div>
+              <div class="top-highlight"> 
+                <h3>IDs</h3>
+              </div>
+              <div class="hold"><label>UPC</label><input type="text" name="" placeholder="UPC"></div>
+              <div class="hold"><label>EAN</label><input type="text" name="" placeholder="EAN"></div>
+              <div class="hold"><label>Custom SKU</label><input type="text" name="" placeholder="Custom SKU"></div>
+              <div class="hold"><label>Manufact. SKU</label><input type="text" name="" placeholder="Manufact. SKU">
+              </div>
+              <div class="top-highlight">
+                <h3>Address</h3>
+              </div>
+              <div class="hold"><label>First Name</label><input type="" name="" placeholder="Category"></div>
+              <div class="hold"><label>Last Name</label><input type="" name="" placeholder="Category"></div>
+              <div class="hold"><label>Company</label><input type="" name="" placeholder="Category"></div>
+              <div class="hold"><label>Country</label><select><option>Canada</option></select></div>
+
+            </div><!-- col md 5-->
+
+            <div class="col-md-6">
+              <div class="top-highlight">
+                <h3>Notes</h3>
+              </div>
+          <textarea></textarea>
+            </div>
+          </div>
+
+      <div class="inventory-wrap-mid" id="noPad">
+        <h1>Lines</h1>
+        <div class="light-hold">
+        <p>32 Results</p>
+        <div class="paginator">
+          <button><i class="fa fa-caret-left"></i></button>
+          <span>1-32</span>
+          <button><i class="fa fa-caret-right"></i></button>
+        </div>
+        <p style="color:#0099cc;font-weight: 600;">100 PER PAGE</p>
+
+        <div class="right">
+          <button><i class="fa fa-print"></i> Print</button>
+          <button><i class="fa fa-file-excel"></i> Export</button>
+        </div>
+      </div>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Class</th>
+                        <th scope="col">Employee</th>
+                        <th scope="col">QTY.</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Discounts</th>
+                        <th scope="col">HST</th>
+                        <th scope="col">Total Tax</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="td-add"> 
+                          <span>Fridge top-freezer bnb</span>
+                          <button>Add new serial</button>
+                        </td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                        <td>$0.00</td>
+                      </tr>
+                    </tbody> 
+                  </table>
+                </div>
+      </div>   
+
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!--- end dashboard main-->
+</div>
+<!--- end dashboard-->
+
+
+<script type="text/javascript">
+  $('#sale').onclick(function(){
+    $('#sale').toggleClass('inputed');
+  });
+</script>

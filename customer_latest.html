@@ -1,0 +1,292 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css"> 
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <link rel="stylesheet" href="css/new_style.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3> 
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html" id="dashboard-active">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fas fa-user-circle"></i> 
+        <span>Customer > <b>Customer: Kelvin Palmer</b></span>
+      </p>
+    </div>
+
+    <div class="inventory-wrap">
+
+      <form>
+
+        <div class="inventory-wrap-top" id="in-top2"> 
+          <button class="inactive-style">Save Changes</button>
+          <div class="inventory-wrap-top-btns">
+            <button class="btn-success">Checkout</button> 
+          </div>
+          <button id="btn-danger">Archive</button>
+        </div>
+
+        <div class="form-wrapper" style="padding-left: 10px;"><!-- adds padding-->
+          <div class="form-section inventory-wrap-with-side">
+            <div class="inventory-wrap-side-nav"><!-- side-->
+              <a href="">Billing</a>
+              <a href="">Email</a>
+              <a href="" class="active">Printing</a>
+              <a href="">Printing</a>
+              <a href="">Printing</a>
+              <a href="">Printing</a>
+            </div> 
+
+            <div class="inventory-wrap-mid">
+              <h1>Lines</h1>
+              <div class="inventory-wrap-top">
+                <form><!-- search form-->
+                  <div class="inventory-search-form inventory-search-form1">
+
+                    <input type="" name="" id="dateRange" style="width: 200px"><i class="fa fa-calendar-alt" style="position: absolute;left: 180px;top: 20px;"></i> 
+                    <input type="" name="" placeholder="ID" style="width: 110px;"> 
+                    <button>Search</button>
+                    <h2 class="advanced-click"><i class="fa fa-chevron-right"></i> Advanced</h2>
+                    <div class="advanced-search-form">
+                      <div class="float-hold">
+                        <div class="hold">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultChecked1">
+                            <label class="custom-control-label" for="defaultChecked1">Show Type</label>
+                          </div>
+                        </div>
+                        <div class="hold">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultChecked2">
+                            <label class="custom-control-label" for="defaultChecked2">Show Company</label>
+                          </div>
+                        </div>
+                        <div class="hold"> 
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultChecked3">
+                            <label class="custom-control-label" for="defaultChecked3">Archived</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="float-hold">
+                        <label>Customer Created</label>
+                        <input type="text" name="" placeholder="Ex: Today, Last Month">
+                      </div>
+                      <div class="float-hold">
+                        <label>Type</label>
+                        <select><option>All Types</option></select>
+                      </div>
+                      <div class="float-hold">
+                        <label>Discount Type</label>
+                        <select><option>All Discounts</option></select>
+                      </div>
+                      <div class="float-hold">
+                        <label>Sales Tax</label>
+                        <select><option>All Sales Tax</option></select>
+                      </div>
+                    </div>
+                  </div>
+                </form><!-- ! search form -->
+
+              </div>
+              <div class="light-hold">
+                <p>32 Results</p>
+                <div class="paginator">
+                  <button><i class="fa fa-caret-left"></i></button>
+                  <span>1-32</span>
+                  <button><i class="fa fa-caret-right"></i></button>
+                </div>
+                <p style="color:#0099cc;font-weight: 600;">100 PER PAGE</p>
+
+                <div class="right">
+                  <button><i class="fa fa-print"></i> Print</button>
+                  <button><i class="fa fa-file-excel"></i> Export</button>
+                </div>
+              </div>
+
+              <div class="top-tab table-responsive inventory-table" id="transactionT">
+                <table class="table" style="font-size: 13px;">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">DATE</th>
+                      <th scope="col">DESCRIPTION</th>
+                      <th scope="col">QTY</th>
+                      <th scope="col">RETAIL</th>
+                      <th scope="col">SUBTOTAL</th>
+                      <th scope="col">DISCOUNTS</th>
+                      <th scope="col">HST</th>
+                      <th scope="col">TOTAL</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="colored">12</td>
+                      <td>01/05/2020</td> 
+                      <td class="colored">Samsung smart fridge</td>
+                      <td>1</td>
+                      <td>$0.00</td>
+                      <td>$0.00</td>
+                      <td>$0.00</td>
+                      <td>0%</td>
+                      <td>$0.00 </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="inventory-wrap-mid margin-bottom" id="reportsSub" style="border:1px solid #ccc;">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <ul>
+                      <li><b>Subtotal</b> <span>$244040</span></li>
+                      <li><b>Discounts</b> <span>$0.00</span></li>
+                      <li><b>HST</b> <span>$3.25</span></li>
+                      <li><b>Total Tax</b> <span>$3.25</span></li> 
+                      <li><b>Total w/ Tax</b> <span>$244040</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul>
+                      <li><b>Taxed</b> <span>$2.33</span></li>
+                      <li><b>Not Taxed</b> <span>$0.00</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul>
+                      <li><b>Cost</b> <span>$2.33</span></li>
+                      <li><b>Profit</b> <span>$0.00</span></li>
+                      <li><b>Margin</b> <span>100%</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+      </form>
+
+
+
+    </div>
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->

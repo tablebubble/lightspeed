@@ -1,0 +1,259 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css"> 
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <link rel="stylesheet" href="css/new_style.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3> 
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html" id="dashboard-active">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fas fa-user-circle"></i> 
+        <span><b>Transaction ID:29393</b></span>
+      </p>
+    </div>
+
+    <div class="inventory-wrap">
+
+      <form>
+
+        <div class="inventory-wrap-top" id="in-top2"> 
+          <button class="inactive-style">Save Changes</button>
+          <div class="inventory-wrap-top-btns">
+            <button>Refund</button>
+            <button>Print Receipt</button>
+            <button>Gift Receipt</button> 
+          </div>
+        </div>
+
+        <div class="form-wrapper" style="padding-left: 10px;"><!-- adds padding-->
+          <div class="form-section inventory-wrap-with-side">
+            <div class="inventory-wrap-side-nav"><!-- side-->
+              <a href="">Billing</a>
+              <a href="">Email</a>
+              <a href="" class="active">Printing</a>
+              <a href="">Printing</a>
+              <a href="">Printing</a>
+              <a href="">Printing</a>
+            </div> 
+
+            <div class="row">
+              <div class="col-md-8" id="transaction">
+                <div class="top-highlight">
+                  <h3>Basic</h3>
+                </div>
+                <div class="hold"><label>Id</label><input type="text" name="" value="386"></div>
+                <div class="hold"><label>Date</label><input type="text" name="" value="1/05/2020 10:46"></div>
+                <div class="top-highlight">
+                  <h3>Status</h3>
+                </div>
+                <div class="hold"><label>Complete</label><input type="text" name="" value="Yes"></div>
+                <div class="hold"><label>Cancelled</label><input type="text" name="" value="Yes"></div>
+                <div class="hold"><label>Voided</label><input type="text" name="" value="No"></div>
+                <div class="top-highlight">
+                  <h3>Change Date / Time</h3>
+                </div> 
+                <div class="hold" style="background: #f2f2f2;">
+                  <label>Voided</label>
+                  <input type="date" name="" style="width: 150px;">
+                  <input type="time" name="" style="width: 150px;">
+                  <button><i class="fa fa-exclamation-circle"></i> Change Date/Time</button>
+                </div> 
+
+                <div class="top-highlight">
+                  <h3>Customer</h3>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+
+                    <div class="hold"><label>Customer</label><input type="text" name="" value="Tom Trian"></div>
+                    <div class="hold"><label>Home</label><input type="text" name="" value="" placeholder="Home"></div>
+                    <div class="hold"><label>Work</label><input type="text" name="" placeholder="Work"></div>
+                    <div class="hold"><label>Mobile</label><input type="text" name="" value="0919191" placeholder="Mobile"></div>
+                    <div class="hold"><label>Email</label><input type="text" name="" value="" placeholder="Email"></div>
+
+                  </div>
+                  <div class="col-md-6" id="customer-opt">
+                    <button><i class="fa fa-pen"></i> Edit Customer</button>
+                    <button><i class="fa fa-times"></i> Remove Customer</button>
+                  </div>
+                </div>
+
+                <div class="top-highlight">
+                  <h3>Location</h3>
+                </div>
+                <div class="hold"><label>Employee</label>
+                  <select><option>Paul pliu</option></select>
+                </div>
+
+                <div class="hold"><label>Register</label>
+                  <select><option>Register 1</option></select>
+                </div>
+
+                <div class="top-highlight">
+                  <h3>Tax</h3>
+                </div>
+                <div class="hold"><label>Sales Tax</label><input type="text" name="" value="" placeholder="Sales Tax"></div>
+                <div class="hold"><label>HST Rate</label><input type="text" name="" value="13%" placeholder="HST Rate"></div>
+
+              </div><!-- col md 8-->
+              <div class="col-md-4" id="transaction">
+
+                <div class="top-highlight">
+                  <h3>Totals</h3>
+                </div>
+                <div class="hold"><label>Total</label><input type="text" name="" value="$3000.00" placeholder="Total"></div>
+                <div class="hold"><label>Payments</label><input type="text" name="" value="$3000.00" placeholder="Payments"></div>
+                <div class="hold"><label>Balance</label><input type="text" name="" value="$0.00" placeholder="Balance"></div>
+
+                <div class="break"></div>
+                <div class="hold"><label>Subtotal</label><input type="text" name="" value="$3000.00" placeholder="Subtotal"></div>
+                <div class="hold"><label>Discounts</label><input type="text" name="" value="$3000.00" placeholder="Discounts"></div>
+                <div class="break"></div>
+
+                <div class="hold"><label>Tax</label><input type="text" name="" value="$3000.00" placeholder="Tax"></div>
+                <div class="hold"><label>Not Taxed</label><input type="text" name="" value="$3000.00" placeholder="Not Taxed"></div>
+                <div class="hold"><label>HST</label><input type="text" name="" value="$3000.00" placeholder="HST"></div>
+                <div class="hold"><label>Total Tax</label><input type="text" name="" value="$3000.00" placeholder="Total Tax"></div>
+                <div class="break"></div>
+                <div class="hold"><label>Cost</label><input type="text" name="" value="$3000.00" placeholder="Cost"></div>
+ 
+                <div class="top-highlight">
+                  <h3>Notes</h3>
+                </div>
+                <div class="receipt-notes">
+                <p>Receipt Note</p>
+                <textarea placeholder="Customers will be able see this on their receipt"></textarea>
+                <p>Internal Note</p>
+                <textarea placeholder="Customers wont be able see this on their receipt"></textarea>
+                </div>
+
+              </div> 
+
+            </div>
+          </div>
+        </div>
+
+
+      </form>
+
+
+
+    </div>
+  </div><!--- end dashboard main-->
+</div><!--- end dashboard-->

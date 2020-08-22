@@ -131,7 +131,7 @@ color: #0088cc;
 
 #dashboard-side-nav {
     height: 100%;
-    width: 230px;
+    width: 200px;
     padding:0px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -154,8 +154,9 @@ color: #0088cc;
 #dashboard-side-nav a {
     color: #afc2d2;
     text-decoration: none;
-    padding: 12px 10px;
+    padding: 7px 10px;
     padding-left: 20px;
+    font-size: 12px;
     display: block;
 }
 #dashboard-active{background:#3333cc;padding: 5px;color: #fff !important;}
@@ -167,7 +168,7 @@ color: #0088cc;
     list-style: none;
     color: #afc2d2;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -176,7 +177,7 @@ color: #0088cc;
 }
 #dashboard-side-nav p {
     background: rgba(255,255,255,.1);
-    font-size: 15px;font-weight: 200;
+    font-size: 13px;font-weight: 200;
     width: 90%;
     margin: 10px auto;
     color: #fff;
@@ -191,7 +192,7 @@ color: #0088cc;
     color: #dee6ed;
 }
 #dashboard-side-nav h2 {
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     padding-left: 20px;
     padding-bottom: 15px;
@@ -269,7 +270,7 @@ color: #0088cc;
     padding-top: 50px;
     float: left;
     width: 100%;
-    padding-left: 230px;
+    padding-left: 200px;
     padding-right: 0px;
 }
 
@@ -283,7 +284,7 @@ color: #0088cc;
     width: 100%;
     left: 0;
     top: 0;
-    padding-left: 250px
+    padding-left: 215px
 }
 #dashboard-main-top p{color: #000;float:left;font-weight: 100;font-size: 15px;}
 #dashboard-main-top b{font-size: 15px;font-weight: 800;}
@@ -515,8 +516,8 @@ box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.2);
 }
 
 /*//INVENTORY WRAP SIDE NAV*/
-.inventory-wrap-with-side{padding-left: 130px;position: relative;}
-.inventory-wrap-side-nav{width: 130px;position: absolute;left: 0;padding:0px 7px;top: 0px;}
+.inventory-wrap-with-side{padding-left: 130px;position: relative;border-bottom: 1px solid #ddd;}
+.inventory-wrap-side-nav{width: 130px;position: absolute;left: 0;padding:0px 5px;top: 0px;bottom: 0px;}
 .inventory-wrap-side-nav a{width: 100%;display: block;padding:7px 5px;font-size: 15px;text-decoration: none !important;} 
 .inventory-wrap-side-nav a:hover{background: #e6e6e6;}
 .inventory-wrap-side-nav #active{background: #f2f2f2;color: #000;}
@@ -527,7 +528,7 @@ box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.2);
     background: #e6e6e6;
     position: relative;
     overflow: hidden;
-}
+} 
 .inventory-wrap-top .inactive-style{
     background: transparent;
     border: 1px solid #ccc;
@@ -730,6 +731,7 @@ box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.2);
 table.table th, table.table td {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    font-size: 12px;
 }
 table b{font-weight: 600;}
 table tr th{font-size: 13px;}
@@ -797,14 +799,15 @@ table tr th{font-size: 13px;}
     padding-left: 20px;
     font-size: 15px;
 }
-.inventory-wrap-mid p{display: inline-block;float: left;padding-top: 5px;}
-.paginator{float: left;width: 102px;border: 1px solid #ddd;height: 30px;margin: 0px 10px;}
+.inventory-wrap-mid p{display: inline-block;float: left;font-size: 13px;}
+.paginator{float: left;width: auto;border: 1px solid #ddd;height: 30px;margin: 0px 10px;}
 .paginator button{width: 30px;border: 0px;background: transparent;float: left;height: 30px;}
 .paginator span{
-    width: 40px;display:inline-block;border-right: 1px solid #ddd;
+    min-width: 40px;display:inline-block;border-right: 1px solid #ddd;
     border-left:1px solid #ddd;background: transparent;float: left;height: 30px;text-align: center;
     line-height: 30px;
     color: #0099cc; 
+    padding: 0px 4px;
 }
  .left{float: left;}
  .right{float: right;} 
