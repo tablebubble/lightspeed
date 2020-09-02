@@ -1,0 +1,253 @@
+.blur{
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+    overflow-y: hidden;
+}
+.nav-toggle{
+    float: left;
+    margin-top: 4px !important;
+    cursor: pointer;
+    border: 0px !important;
+}
+.switch{
+	position: absolute;
+	top: 20px;
+    left: 20px;
+}
+.switch  div:nth-child(2){
+    display: none !important;
+}
+.switch div:first-child{
+    transform:rotate(45deg)!important;
+    position: relative;
+    bottom: -9px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.switch div{
+    transform:rotate(135deg)!important;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    width: 35px !important;
+}
+.nav-toggle div{
+    width: 35px;
+    height: 2px;
+    background: #1176d1;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+
+}
+.nav-toggle div:nth-child(2){
+    width: 30px;
+    background:#afc2d2;
+}
+.nav-toggle div:nth-child(3){
+    width: 25px;
+}
+.display{display: block !important;}
+
+@media(max-width: 998px){
+
+#dashboard-main{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#dashboard-side-nav{
+	padding: 80px 0px 0px 0px; 
+    display: none;
+    width: 100%;
+}
+
+#dashboard-side-nav p {
+    width: 100%;
+    padding: 15px;
+}
+.nav-toggle{display: block;}
+#dashboard-main-top {
+    padding-left: 20px;
+    height: 50px;
+    overflow: hidden;
+}
+#dashboard-main-top p{color: #000;float:right;padding-right: 20px;padding-top: 0px;}
+
+.dashboard-bottom-btn{
+    position:relative; 
+    bottom:auto; 
+    width: 95%;
+}
+
+.dashboard-bottom{
+    width: 100%;
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top: 20px;
+    position:relative; 
+    bottom: auto;
+}
+.summary-wrap .inner{
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.sum{
+    width: 100%;
+    float: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-right: 0px solid rgba(255,255,255.1);
+    font-size: 11px !important;
+    margin-bottom: 10px;
+}
+.notification-wrapper{
+    padding: 20px 10px;
+}
+.sales-wrap-top{margin-top: 30px;}
+.sales-wrap-top button{float: left;margin-bottom: 10px;}
+.sales-wrap-bottom{margin-right: 10px;}
+.sales-left button{width: 95%;}
+
+.tab-price{
+    border: 1px solid #ccc;
+    padding-left: 0px;
+    position: relative;
+}
+.tab-price i{
+    position: relative;
+    right: auto; 
+}
+
+.inventory-search-form{
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    height: auto;
+}
+.inventory-search-form input{width:100% !important;height: 30px;float: none;}  
+.inventory-search-form button{height: 30px;border: 1px solid #0099cc;background: #0099cc;color: #fff;padding: 0px 9px;font-size: 13px;}
+
+.inventory-wrap-top{
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 0px 0px;
+    padding-left: 0px; 
+    overflow: hidden;
+    background: #e6e6e6;
+    position: relative;
+    text-align: center;
+}
+
+.inventory_new{
+    right: 0;
+    top: auto; 
+    bottom: 0;
+    top: auto;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0px;
+}
+.inventory-search-form1{
+    padding-left: 20px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    height: auto;
+    padding-bottom: 40px;
+}
+.inventory-search-form input{border:1px solid #999;} 
+.inventory-search-form button{width: 100%;} 
+.inventory-wrap .right{float: left;}
+
+.inventory-wrap-mid{
+    padding-left: 0px;
+}
+.top1{text-align: center;}
+
+.inventory-search-form1{
+    padding-left: 0px; 
+    float: none;
+}
+.float-hold{float: none;width: 100%;text-align: center;}
+.advanced-search-form input,.advanced-search-form select{margin:0 auto !important;float: none;width: auto !important;}
+.advanced-search-form label{font-weight: 800;font-size: 14px;}
+.advanced-click{
+    display:inline-block !important;
+    width: 100%;
+    padding:15px 0px;
+    margin: 0 auto;text-align:center;
+    width: 100% !important;
+    margin-bottom: 120px;
+    margin-top: 40px;
+}
+.service-wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 50px;
+}
+.service-wrap .input1{width: 49%;}
+.service-wrap .input2{width: 100%;display: block;}
+.service-wrap .col-md-3{
+    border: 0px solid #ccc;
+    height: auto;
+    padding: 0px;
+    margin-top: 40px;
+} 
+.service-wrap button{width: 100%;}
+
+.employee_role h3 i{
+    width: auto;display: inline-block;
+}
+
+.employee_role span label{
+    width: 100%;
+    float: none;
+    display: block;
+}
+
+.employee_role span input[type=checkbox]{
+    float: none;
+    margin:0px; 
+}
+.top1{padding: 20px;}
+.top1 div{float: none !important;padding: 0px !important;}
+.top1 button{width: 100% !important;margin:2px 0px !important;}
+.top1 .right{width: 100% !important;padding: 0px !important;float: none;margin: 0px;}
+
+.inventory-wrap-with-side{padding-left:0px;position: relative;}
+.inventory-wrap-side-nav{width:100%;position: relative;left: 0;padding:0px 7px;top: 0px;margin-bottom: 50px;}
+.form-wrapper{padding: 0px !important;}
+.setup .checkbox-right label.custom-control-label::after {
+    right: 3px;
+    left: auto;
+
+}.setup .checkbox-right label.custom-control-label::before {
+    right: 3px;
+    left: auto;
+
+}
+.add-sub label{width:100%;} 
+.add-sub input{width:100%;border:1px solid #ccc;margin:10px 0px;}
+.add-sub button{
+    width: 100%;
+}  
+.subcategory .inventory-wrap-mid{padding-left: 20px !important;}
+.top-pagination{padding-left: 20px;float: left;}
+.top-pagination i{margin-right: 4px;} 
+
+}
+
+@media(max-width: 400px){
+    #dashboard-main-top p{font-size: 11px !important;}
+    #dashboard-main-top b{font-size: 11px !important;}
+} 

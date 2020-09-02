@@ -1,0 +1,366 @@
+
+<head>
+  <title>Lightspeed Retail | Sales</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CSS FILES-->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/logo2.png">
+  <link href="fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel="stylesheet" href="simple-line-icons.css">
+  <link rel="stylesheet" href="fontawesome-4.5.0.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="css/mdb.css"> 
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.css"> 
+  <link rel="stylesheet" href="css/new_style.css"> 
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/toggle.js"></script>
+
+</head>
+
+<div class="dashboard"> <!-- DASHBOARD SIDE NAVIGATION-->
+  <div id="dashboard-side-nav">
+
+    <span class="nav-toggle" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+
+
+    <img src="img/logo.png">
+    <p>Strongman Appliances Ltd.</p>
+    <h2 class="account-drop-btn">Ayodeji Ayomide <i class="fa fa-caret-down"></i> <span>OUT</span></h2>
+    <div class="account-drop-hold">
+      <div class="account-drop">
+        <h3>Account ID 1982637</h3>
+        <a href="">Time Clock</a>
+        <a href="">Change Employee</a>
+        <a href="">Employee Settings</a>
+        <a href="">Sign Out</a>
+      </div>
+    </div>
+    <ul> 
+      <li>
+        <a href="home.html"> 
+          <i class="fa fa-home"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="sales.html">
+          <i class="fa fa-download"></i>
+          <span>Sales</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inventory.html" id="dashboard-active">
+          <i class="fa fa-archive"></i>
+          <span>Inventory</span>
+        </a>
+      </li>  
+      
+      <li>
+        <a href="service.html">
+          <i class="fas fa-braille"></i>
+          <span>Service</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="customer.html">
+          <i class="fas fa-user-circle"></i> 
+          <span>Customer</span>
+        </a>
+      </li> 
+
+
+      <li> 
+        <a href="reports.html">
+          <i class="fa fa-chart-line"></i> 
+          <span>Reports</span>
+        </a>
+      </li> 
+
+      <li>
+        <a href="settings.html">
+          <i class="fa fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+    <button class="dashboard-bottom-btn"><i class="fa fa-lock" style="padding-right: 5px;"></i> Lock</button>
+    <div class="dashboard-bottom">
+      <button class="btn-1"><i class="fa fa-question-circle"></i>   Help</button>
+      <button class="btn-2"><i class="fas fa-thumbtack" style="color: #ff6600;"></i> </button>
+    </div>
+  </div> 
+  <!-- DASHBOARD SIDE NAV ENDS-->
+
+
+  <div id="dashboard-main">
+    <div id="dashboard-main-top">
+
+      <span class="nav-toggle" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
+
+      <p> 
+        <i class="fa fa-archive"></i>
+        <span>Reports</span>
+      </p>
+    </div><!-- dashboard main top-->
+
+
+    <div class="reporting-top">
+      <h1>Basic Reporting</h1>
+      <h1 class="active">Advanced Reporting</h1>
+    </div>
+    <div class="reports-wrap">
+     <ul class="tabs">
+       <li class="active" id="tab1"><i class="fa fa-home"></i> Dashboard</li>
+       <li id="tab2"><i class="fa fa-signal"></i> Stats</li>
+       <li id="tab3"><i class="fa fa-mobile"></i> Mobile</li>
+     </ul> 
+
+     <!-- T A B S --->
+     <!-- T A B 1 -->
+     <div id="tab1-wrap" class="tab-wrap active-tab">
+       <div class="charts">
+         <div class="alert alert-warning"><b>Trial Expires Soon:</b> Your advance reporting trial expires</div>
+         <!-- row -->
+         <div class="row">
+           <div class="col-md-9">
+             <div class="chart" id="big-chart">
+               <h2>Store Sales 
+                <ul>
+                  <li class="active">Today</li>
+                  <li>Yesterday</li>
+                  <li>Week</li>
+                  <li>Month</li>
+                  <li>Year</li>
+                  <li>Custom</li>
+                </ul>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-3">
+           <div class="chart">
+             <h2>Total Sales</h2>
+             <p><b>$0.00</b></p>
+           </div>
+           <div class="chart">
+             <h2>Number of Sales</h2>
+             <p>0</p>
+           </div>
+           <div class="chart">
+             <h2>Avg. Sales</h2>
+             <p>$-nan</p>
+           </div>
+           <div class="chart">
+             <h2>% Change</h2>
+             <p><b class="colored">0.00%</b></p>
+             <p>
+              <span class="float-left">
+               <small>26/05</small>
+               <small><b>$0.00</b></small>
+             </span>
+             <span class="float-right">
+               <small>26/05</small>
+               <small><b>$0.00</b></small>
+             </span>
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- row -->
+     <div class="row">
+
+       <div class="col-md-3">
+         <div class="chart">
+           <h2>Total Sales</h2>
+           <p><b>$0.00</b></p>
+         </div>
+       </div>
+       <div class="col-md-3">
+         <div class="chart">
+           <h2>Total Sales</h2>
+           <p><b>$0.00</b></p>
+         </div>
+       </div>
+       <div class="col-md-3">
+         <div class="chart">
+           <h2>Total Sales</h2>
+           <p><b>$0.00</b></p>
+         </div>
+       </div>
+       <div class="col-md-3">
+         <div class="chart">
+           <h2>Total Sales</h2>
+           <p><b>$0.00</b></p>
+         </div>
+       </div>
+
+     </div>
+     <!--- row -->
+
+     <div class="row">
+       <div class="col-md-12">
+         <div class="chart" id="big-chart">
+           <h2><i class="fa fa-angle-down"></i> Sales by hour 
+            <span class="float-right">
+              <i class="fa fa-signal"></i>
+              <i class="fa fa-list-ul"></i>
+            </span>
+          </h2> 
+        </div>
+      </div>
+    </div>
+  </div><!-- C H A R T S-->
+
+</div>
+<!-- T A B 2 -->
+<div id="tab2-wrap" class="tab-wrap">
+  <div class="charts">
+    <div class="search">
+      <form class=" float-right">
+        <input type="date" name=""> 
+        <input type="date" name="">
+        <button><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="chart">
+          <h2>Top Performers</h2>
+          <ul class="chart-ul">
+            <li class="top"><span>Description</span> <i>QTY</i></li>
+            <li><span>Test</span><i>3</i></li>
+            <li><span>Slide in stove - Kitchen Gas</span><i>1</i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart">
+          <h2>Worst Performers</h2>
+          <ul class="chart-ul">
+            <li class="top"><span>Description</span> <i>QTY</i></li>
+            <li><span>Test</span><i>3</i></li>
+            <li><span>Slide in stove - Kitchen Gas</span><i>1</i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart">
+          <h2>Top Categories</h2>
+          <ul class="chart-ul">
+            <li class="top"><span>Description</span> <i>QTY</i></li>
+            <li><span>Test</span><i>3</i></li>
+            <li><span>Slide in stove - Kitchen Gas</span><i>1</i></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- row -->
+
+    <div class="row">
+     <div class="col-md-12">
+       <div class="chart" id="big-chart">
+         <h2>Profit vs Cost</h2> 
+       </div>
+     </div>
+   </div>
+   <div class="row"> 
+     <div class="col-md-12">
+       <div class="chart" id="table-chart">
+         <h2>Store Performance</h2> 
+
+         <div class="top-tab table-responsive inventory-table">
+          <table class="table" style="font-size: 13px;">
+            <thead>
+              <tr>
+                <th scope="col"><b>Store</b></th>
+                <th scope="col"><b>Cost</b></th>
+                <th scope="col"><b>Profit</b></th>
+                <th scope="col"><b>Gross Margin</b></th>
+                <th scope="col"><b>Top Performer</b></th>
+                <th scope="col"><b>Worst Performer</b></th>
+                <th scope="col"><b>Top Category</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Strongman appliances ltd.</td>
+                <td>$0.00</td> 
+                <td>$2.599</td>
+                <td>100%</td>
+                <td>Test</td>
+                <td>Turn</td>
+                <td>Dishwashers</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><b>$0.00</b></td> 
+                <td><b>$2.599</b></td>
+                <td><b>100%</b></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!--charts-->
+</div>
+<!-- T A B 3 -->
+<div id="tab3-wrap" class="tab-wrap">
+  <div style="width: 100%;background: blue;height: 300px;"></div>
+</div>
+<!-- T A B S --->
+
+
+</div><!--- end dashboard main-->
+</div><!--- end dashboard-->
+
+
+<script type="text/javascript">
+  $('li').click(function(e){
+    e.preventDefault();
+    var tab = e.currentTarget.id;
+    var tabWrap = tab + '-wrap';
+    console.log(tabWrap)
+    $('li').removeClass('active');
+    $(this).addClass('active');
+    $("div").removeClass('active-tab');
+    $('#'+tabWrap).addClass('active-tab');
+  }) 
+</script>  
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script type="text/javascript">
+  $('#dateRange').daterangepicker();
+</script> 
