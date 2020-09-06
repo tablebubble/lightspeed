@@ -1,5 +1,4 @@
-
-  var drop = $("input");
+var drop = $("input");
 drop
   .on("dragenter", function(e) {
     $(".drop").css({
@@ -37,12 +36,13 @@ function handleFileSelect(evt) {
       return function(e) {
         // Render thumbnail.
         var span = document.createElement("span");
+        var time = 33;
         span.innerHTML = [
           '<img class="thumb" src="',
           e.target.result,
           '" title="',
           escape(theFile.name),
-          '"/><button class="thumb-btn"><i class="fa fa-trash"></i></button><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="defaultChecked2"><label class="custom-control-label" for="defaultChecked2"></label></div>'
+          '"/><button class="thumb-btn"><i class="fa fa-trash"></i></button><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="defaultChecked"><label class="custom-control-label" for="defaultChecked"></label></div>'
         ].join("");
         document.getElementById("list").insertBefore(span, null);
       };
